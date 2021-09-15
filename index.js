@@ -36,9 +36,9 @@ async function main() {
       }
     },
     select: {
-      // siswa: {
-      //   select :{nama: true}
-      // },
+      siswa: {
+        select :{nama: true, nrp: true}
+      },
       jawaban: {
         select: {
           soal: { select: { content: true } },
@@ -47,11 +47,12 @@ async function main() {
     },
   });
 
-  console.log(getNilai);
-  console.log(getNilai.length);
+  // console.log(getNilai);
+  // console.log(getNilai.length);
   // for(item of getNilai){
   //   console.log(item.jawaban.soal)
   // }
+  return 0
 }
 
 main()
