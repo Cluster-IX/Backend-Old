@@ -51,3 +51,10 @@ model Result {
   siswa      Siswa   @relation(fields: [id_siswa], references: [id])
   jawaban    Jawaban @relation(fields: [id_jawaban], references: [id])
 }
+
+model Test {
+  id         Int     @id @default(autoincrement())
+  id_siswa   Int
+  id_jawaban Int
+}
+
